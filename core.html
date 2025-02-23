@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="codes.js">
+</head>
+
+
+
+
+    <body>
+        <form name="frmlogin" action="xuli.php" onsubmit="return kiemtra();">
+
+          <div> <label> cau 1</label> <input type="text" name="tl1" id="c1"> </div>
+          <div> <label> cau 2</label> <input type="text" name="tl2" id="c2"> </div>
+          <div> <label> cau 3</label> <input type="text" name="tl3" id="c3"> </div>
+
+          <h6 id="baoloi"> </h6>
+          <div> <button type="submit"> dangnhap </button> </div>
+
+        </form>   
+
+
+        <div id="hienthi">  </div>
+
+
+     <script>
+
+          function kiemtra(){
+              var tl1 = document.frmlogin.tl1.value;
+              var tl3 = document.frmlogin.tl3.value;
+              var tl2 = document.frmlogin.tl2.value;
+
+              if(tl1==""){
+                  document.getElementById("baoloi").innerHTML = " nhap lai " ;
+                  document.getElementById("c1").focus();
+                  return false;
+              }
+              if(tl2.length<7){
+                  document.getElementById("baoloi").innerHTML = " nhap ngan qua " ;
+                  document.getElementById("c2").focus();
+                  return false;
+              }
+              if(tl3!="ngay.1#2@3"){
+                  document.getElementById("baoloi").innerHTML = " ngay.1#2@3 " ;
+                  document.getElementById("c3").focus();
+                  return false;
+              }
+
+              alert(html);
+          return true;
+          }
+////////////////////////////
+
+const mammoth = require('mammoth'); 
+const fs = require('fs');
+let chuoimoi;
+let traloi;
+let cauhoi;
+
+
+const pathToDocx = 'questiong.docx';
+fs.readFile(pathToDocx, (err, data) => {
+     if (err) { console.error('Error reading file:', err); 
+        return; }
+        mammoth.convertToHtml({ buffer: data }) 
+         .then(result => { 
+            const html = result.value;
+         //  console.log('HTML Content:', html);
+//
+chuoimoi = html;
+console.log(chuoimoi[1])
+        }) .catch(err => { console.error('Error converting document:', err);
+
+         }); 
+        
+        });
+
+   
+
+
+          
+////  may 
+
+
+
+
+//////////////////
+     </script>  
+     
+     
+
+
+
+    </body>
+</html>

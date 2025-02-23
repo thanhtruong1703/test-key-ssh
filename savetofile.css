@@ -1,0 +1,13 @@
+#savetofile{
+    position: center; 
+    width: 11%;
+    padding: 10px;
+    top: 120px; right: 30 ;
+    
+    background-color: black;
+    padding: 10px;
+    border: 7px solid red;
+    border-radius: 4px red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}

@@ -1,0 +1,99 @@
+/* Cơ bản: Định nghĩa màu sắc và cấu trúc */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Định nghĩa cấu trúc cho các phần tử */
+#hienthi {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Định nghĩa cho phần tử input */
+input[type="file"] {
+    margin: 10px 0;
+}
+
+/* Định nghĩa cho phần tử container */
+#container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Định nghĩa cho phần tử submit button */
+#submit-bt {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Định nghĩa cho phần tử h2 */
+#diem {
+    font-size: 24px;
+    color: #333;
+    text-align:right;
+    margin: 20px ;
+}
+
+/* Định nghĩa cho phần tử h4 */
+#baoloi {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin: 10px;
+}
+
+#diem_so{
+    position: fixed; 
+    width: 10%;
+    padding: 10px;
+    top: 0; right:30 ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#bt-xoa{
+    position: fixed; 
+    width: 11%;
+    padding: 10px;
+    top: 120px; right: 30 ;
+    
+    background-color: #ff4d4d;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
